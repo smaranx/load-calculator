@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+
+    /* Language and Environment */
+    "target": "es2016" /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */,
+
+    /* Modules */
+    "module": "commonjs" /* Specify what module code is generated. */,
+
+    /* JavaScript Support */
+    "allowJs": true /* Allow JavaScript files to be a part of your program. Use the 'checkJS' option to get errors from these files. */,
+
+    "outDir": "build" /* Specify an output folder for all emitted files. */,
+
+    "esModuleInterop": true /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */,
+    // "preserveSymlinks": true,                         /* Disable resolving symlinks to their realpath. This correlates to the same flag in node. */
+    "forceConsistentCasingInFileNames": true /* Ensure that casing is correct in imports. */,
+
+    /* Type Checking */
+    "strict": true /* Enable all strict type-checking options. */,
+    "noImplicitAny": true /* Enable error reporting for expressions and declarations with an implied 'any' type. */,
+    "strictNullChecks": true /* When type checking, take into account 'null' and 'undefined'. */,
+
+    "noUnusedLocals": true /* Enable error reporting when local variables aren't read. */,
+    "noUnusedParameters": true /* Raise an error when a function parameter isn't read. */,
+
+    "skipLibCheck": true /* Skip type checking all .d.ts files. */
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "build/**/*"]
+}

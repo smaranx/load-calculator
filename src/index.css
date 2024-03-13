@@ -1,0 +1,713 @@
+@tailwind base;
+/* ===> Enabling Tailwind CSS */
+@tailwind components;
+/* ===> Enabling Tailwind CSS */
+@tailwind utilities;
+/* ===> Enabling Tailwind CSS */
+
+/* Data Display CSS, Static Data & Critical Data*/
+
+#data-box {
+  @apply grid justify-items-center shadow-lg rounded-md px-4 m-4 font-bold;
+}
+
+#flex-container {
+  @apply shadow-lg rounded-md py-4 font-semibold space-x-2 grid grid-cols-4 gap-2;
+}
+
+#data-bar {
+  @apply flex flex-col justify-center justify-items-center mx-auto py-8;
+}
+
+.hide-scroll-bar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Variables */
+
+/* Basic Data CSS */
+
+.window-css {
+  @apply grid grid-cols-2 p-8 gap-7 mx-2;
+}
+
+.modal {
+  background-color: #cfa015;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  width: 1050px;
+  height: 610px;
+  margin: auto;
+  margin-top: 15vh;
+  padding: 10px;
+}
+
+p,
+label {
+  font: 1rem 'Fira Sans', sans-serif;
+}
+
+input {
+  margin: 0.4rem;
+  text-align: left;
+}
+
+#counter-css {
+  @apply flex mt-4 justify-start grid grid-cols-2;
+}
+
+#counter-comp-css {
+  @apply grid grid-cols-3 justify-items-center gap-0;
+}
+
+.box-item {
+  @apply my-1 grid grid-cols-2 text-left;
+  margin: 10px 0;
+}
+
+button {
+  @apply mx-3;
+}
+
+.label-font-b {
+  @apply text-xl font-bold text-black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.label-font-w {
+  @apply text-3xl font-bold text-white;
+}
+
+.plus-minus {
+  height: auto;
+  width: 22px;
+}
+
+.check-box {
+  transform: scale(3);
+  margin: 5px 0 0 0;
+  width: 0.6em;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.custom-checkbox {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+.custom-checkbox .checkmark {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #222;
+  display: inline-block;
+  /* background-image: url(); */
+}
+
+.custom-checkbox input {
+  display: none;
+}
+
+/* Fuel Pod Data */
+
+#fuel-silders {
+  @apply mt-3 grid grid-cols-5;
+  padding: 30px;
+  width: 95vh;
+  height: 35vh;
+}
+
+#fuel-silder {
+  @apply grid grid-cols-5;
+  transform: rotate(-90deg) translate(-50%, -50%);
+}
+
+#fuel-img {
+  height: 5vh;
+  width: 3vw;
+  margin-left: 2em;
+}
+
+#podState {
+  text-align: center;
+  color: #000000;
+  font-size: 4vh;
+  font-weight: bold;
+  margin: 3%;
+}
+
+.tank-container {
+  background-color: #1b1b1b;
+  border-radius: 1vh;
+}
+
+#tank-outBoard {
+  background: #f9d63a;
+  width: 100vw;
+  border-radius: 1vh;
+}
+
+#outboard1 {
+  position: relative;
+  top: 10.5vh;
+  left: 3.5vw;
+  opacity: 0.75;
+  width: 10.6vw;
+  height: 7.5vh;
+  transform: rotate(190deg);
+}
+
+#outboard2 {
+  position: relative;
+  top: 12.6vh;
+  left: 37.7vw;
+  opacity: 0.75;
+  width: 6.25vw;
+  height: 7.47vh;
+  transform: rotate(183deg);
+}
+
+#tank-inBoard {
+  background: #f9d63a;
+  width: 100v;
+  border-radius: 10px;
+}
+
+#inboard1 {
+  position: relative;
+  left: 15vw;
+  opacity: 0.75;
+  width: 3.6vw;
+  height: 8.5vh;
+  transform: rotate(190deg);
+}
+
+#inboard2 {
+  position: relative;
+  left: 27.7vw;
+  bottom: 5.3vh;
+  opacity: 0.75;
+  width: 3.645vw;
+  height: 8.5vh;
+  transform: rotate(183deg);
+}
+
+#root {
+  height: 100%;
+  position: relative;
+}
+
+#tank-fuselage {
+  background: #f9d63a;
+  width: 100v;
+  border-radius: 1vh;
+}
+
+#fuselage {
+  position: relative;
+  left: 19.27vw;
+  bottom: 10.1vh;
+  opacity: 0.75;
+  width: 6.25vw;
+  height: 4.48vh;
+  transform: rotate(186deg);
+}
+
+#plane-tanks {
+  @apply justify-center items-center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-self: center;
+  width: 47vw;
+  height: 35vh;
+  margin: 5%;
+  position: relative;
+}
+
+/* Input Variables CSS */
+
+#input-css {
+  @apply w-full h-11 place-items-stretch rounded-md border border-[#d9d9d9] placeholder-gray-500;
+  /* margin: 0.4rem; */
+}
+
+#modal-basic-data::-webkit-scrollbar {
+  display: none;
+}
+
+.input-css {
+  margin: 0;
+  padding-left: 4%;
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 4px;
+  min-height: 38px;
+}
+
+.input-css:hover {
+  border-color: hsl(0, 0%, 70%);
+}
+
+.input-css:focus {
+  border: 2px solid #2684ff;
+  outline: none;
+}
+
+/* CheckBox CSS */
+
+#main-fuel {
+  @apply mt-1 border border-[#d9d9d9] p-3;
+}
+
+#checkBoxes {
+  @apply flex space-x-8;
+}
+
+/* next  */
+
+#close {
+  position: absolute;
+  width: 1vw;
+  top: 10px;
+  right: 5px;
+}
+
+#close-fuel {
+  position: absolute;
+  width: 1vw;
+  top: 10px;
+  right: 5px;
+}
+
+/* first page image */
+
+#background-color {
+  background-color: #ffd990;
+  height: 100%;
+  width: 100%;
+  background-size: 100% 100%;
+}
+
+#background-image {
+  background-image: url('/src/assets/Cloud.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100vh;
+  width: 100vw;
+  padding: 5em;
+}
+
+#proj-img {
+  justify-content: center;
+
+  margin: auto;
+
+  height: auto;
+  width: 31vw;
+}
+
+.proj-label {
+  font-size: 5vh;
+  font-weight: bold;
+  text-align: center;
+}
+
+#airPlane1 {
+  position: fixed;
+  width: 17vw;
+  top: 0;
+  right: 0;
+}
+
+#airPlane2 {
+  position: fixed;
+  width: 17vw;
+  bottom: 0;
+  left: 0;
+}
+
+#p1 {
+  position: fixed;
+  width: 8vw;
+  top: 0;
+  left: 0;
+}
+
+#p2 {
+  position: fixed;
+  width: 7vw;
+  top: 17vh;
+  left: 17vw;
+}
+
+#p3 {
+  position: fixed;
+  width: 7vw;
+  top: 28vh;
+  left: 5vw;
+}
+
+#p4 {
+  position: fixed;
+  width: 7vw;
+  top: 40vh;
+  left: 15vw;
+}
+
+#p5 {
+  position: fixed;
+  width: 8vw;
+  bottom: 20vh;
+  right: 22vw;
+}
+
+#p6 {
+  position: fixed;
+  width: 8vw;
+  bottom: 8vh;
+  right: 5vw;
+}
+
+#p7 {
+  position: fixed;
+  width: 8vw;
+  bottom: 0vh;
+  right: 12vw;
+}
+
+#p8 {
+  position: fixed;
+  width: 4vw;
+  bottom: 0vh;
+  right: 0vw;
+}
+
+.arrows_img {
+  @apply fixed bottom-[2vh] right-[45.78vw] w-[8vw];
+}
+
+@media (max-width: 629px) {
+  img#p1 {
+    display: none;
+  }
+
+  img#p2 {
+    display: none;
+  }
+
+  img#p3 {
+    display: none;
+  }
+
+  img#p4 {
+    display: none;
+  }
+
+  img#p5 {
+    display: none;
+  }
+
+  img#p6 {
+    display: none;
+  }
+
+  img#p7 {
+    display: none;
+  }
+
+  img#p8 {
+    display: none;
+  }
+
+  #airPlane1 {
+    display: none;
+  }
+
+  #airPlane2 {
+    display: none;
+  }
+
+  #background-image {
+    background-image: none;
+  }
+}
+
+@media (max-height: 629px) {
+  img#p1 {
+    display: none;
+  }
+
+  img#p2 {
+    display: none;
+  }
+
+  img#p3 {
+    display: none;
+  }
+
+  img#p4 {
+    display: none;
+  }
+
+  img#p5 {
+    display: none;
+  }
+
+  img#p6 {
+    display: none;
+  }
+
+  img#p7 {
+    display: none;
+  }
+
+  img#p8 {
+    display: none;
+  }
+
+  #airPlane1 {
+    display: none;
+  }
+
+  #airPlane2 {
+    display: none;
+  }
+
+  #background-image {
+    background-image: none;
+  }
+}
+
+/* Data Collection */
+
+#data-col-win1 {
+  @apply flex flex-col w-1/2 bg-[#4E4E4E] rounded-t-3xl ml-60;
+}
+
+#data-col-win2 {
+  @apply flex flex-col w-1/2 ml-[20px];
+}
+
+#data-col-h1 {
+  @apply text-3xl font-bold text-[#000000] mt-5 ml-[10px];
+}
+
+#data-col-h2 {
+  color: #cfa015;
+}
+
+body {
+  height: 100vh;
+  background-color: #fafafa;
+}
+
+/*first page gradiant*/
+
+.coolGrad {
+  background: linear-gradient(
+    180deg,
+    rgba(142, 219, 237, 1) 0%,
+    rgba(33, 147, 176, 1) 100%
+  );
+}
+
+#object_num_ {
+  position: absolute;
+  z-index: 9;
+  background-color: #f1f1f1;
+  border: 1px solid #d3d3d3;
+  text-align: center;
+  cursor: move;
+}
+
+#gridContainer {
+  background-image: url('../src/assets/grid.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#gridEnd {
+  position: absolute;
+  margin-top: -25px;
+}
+
+#gridStart {
+  position: absolute;
+  margin-top: -25px;
+}
+
+.modal {
+  font-size: 12px;
+}
+
+.modal > .header {
+  width: 100%;
+  border-bottom: 1px solid gray;
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+}
+
+.modal > .content {
+  width: 100%;
+  padding: 10px 5px;
+}
+
+.modal > .actions {
+  width: 100%;
+  padding: 10px 5px;
+  margin: auto;
+  text-align: center;
+}
+
+.modal > .close {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: -10px;
+  top: -10px;
+  font-size: 24px;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #cfcece;
+}
+
+/* Popup style */
+.popup-box {
+  z-index: 1;
+  position: fixed;
+  background: #00000050;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.box {
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  height: auto;
+  max-height: 70vh;
+  margin-top: calc(100vh - 85vh - 20px);
+  background: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  border: 1px solid #999;
+  overflow: auto;
+}
+
+.close-icon {
+  content: 'x';
+  cursor: pointer;
+  position: fixed;
+  right: calc(16% - 30px);
+  top: calc(15vh - 33px);
+  background: #ededed;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  line-height: 20px;
+  text-align: center;
+  border: 1px solid #999;
+  font-size: 20px;
+}
+
+/* Sidebar Scroller Styling */
+
+.sidebar::-webkit-scrollbar {
+  width: 12px;
+  /* width of the entire scrollbar */
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: rgb(14 116 144);
+  /* color of the tracking area */
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: #1e1e22;
+  /* color of the scroll thumb */
+}
+
+.startEndGrid {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.blob {
+  position: absolute;
+  left: -36.04%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.buttonForSettings {
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  color: #000000;
+  animation-name: spin;
+  background-color: transparent;
+}
+.buttonForSettings:hover {
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  color: white;
+  animation-name: spin;
+}
+
+.spinningSettingsIcons {
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  color: #000000;
+}
+
+.spinningSettingsIcons:hover {
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transition: transform 0.5s ease-in-out;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.basicDataSendButton {
+  width: fit-content;
+  height: fit-content;
+  background-color: #c4c8cc !important;
+  color: black !important;
+  font-weight: bold;
+  padding: 5px;
+  font-size: larger;
+  align-self: center;
+
+  /* position: absolute;
+  left: 9vw;
+  top: 4.5vh; */
+}
+.swal2-container {
+  z-index: 10000;
+}

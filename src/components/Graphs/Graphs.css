@@ -1,0 +1,39 @@
+.bigwrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  align-self: flex-start;
+  margin-top: 30px;
+  margin-left: 30px;
+  align-items: center;
+  position: relative;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  margin-top: 10px;
+}
+
+.titleWrapper {
+  transform: rotate(-90deg);
+}
+
+.tiltedText {
+  margin: 0 10px;
+  writing-mode: vertical-rl;
+  transform: rotate(-90deg);
+}
